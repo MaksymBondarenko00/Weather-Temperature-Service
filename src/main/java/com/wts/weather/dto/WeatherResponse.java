@@ -1,7 +1,7 @@
 package com.wts.weather.dto;
 
 public record WeatherResponse(
-        String temperature,
+        double temperature,
         String category
 ) {
 }

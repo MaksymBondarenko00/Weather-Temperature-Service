@@ -19,6 +19,6 @@ public class WeatherService {
     public WeatherResponse getWeather(WeatherRequest req) throws IOException, InterruptedException {
         var temp = weatherProvider.getTemperature(req.city());
         var weatherType = classifier.classify(temp);
-        return new WeatherResponse(weatherType, String.valueOf(temp));
+        return new WeatherResponse(temp, weatherType);
     }
 }
