@@ -6,6 +6,9 @@ This project is a backend service that retrieves the current temperature for a g
 
 The application is deployed as an AWS Lambda function and exposed via an HTTP endpoint (Function URL).
 
+Follow the link to test the service:
+
+https://moimruzui72cugn7fquebt26yu0urhrq.lambda-url.us-east-1.on.aws/?city=Warsaw
 ---
 
 ## Application flow
