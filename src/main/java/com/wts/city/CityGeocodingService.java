@@ -47,9 +47,9 @@ public class CityGeocodingService {
             }
 
             var lat = geo.results().getFirst().geometry.location.lat;
-            var lon = geo.results().getFirst().geometry.location.lon;
+            var lng = geo.results().getFirst().geometry.location.lng;
 
-            return new double[]{lat, lon};
+            return new double[]{lat, lng};
 
         } catch (Exception e) {
             throw new RuntimeException("Failed to get coordinates", e);

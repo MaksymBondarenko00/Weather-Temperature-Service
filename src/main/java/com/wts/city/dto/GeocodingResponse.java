@@ -22,6 +22,6 @@ public record GeocodingResponse(
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Location {
         public double lat;
-        public double lon;
+        public double lng;
     }
 }

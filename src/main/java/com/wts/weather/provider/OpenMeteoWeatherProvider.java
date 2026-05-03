@@ -25,11 +25,11 @@ public class OpenMeteoWeatherProvider implements WeatherProvider {
             double[] coords = geocodingService.getCoordinates(city);
 
             double lat = coords[0];
-            double lon = coords[1];
+            double lng = coords[1];
 
             String url = String.format(
                     "https://api.open-meteo.com/v1/forecast?latitude=%s&longitude=%s&current=temperature_2m",
-                    lat, lon
+                    lat, lng
             );
 
             var request = HttpRequest.newBuilder()
